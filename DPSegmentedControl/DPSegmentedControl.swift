@@ -79,14 +79,14 @@ class DPSegmentedControl:UIControl {
     }
     
     
-    init(FrameWithoutIcon frame: CGRect, items:[String], backgroundColor:UIColor, thumbColor:UIColor, textColor:UIColor, selectedTextColor:UIColor) {
+    init(FrameWithoutIcon frame: CGRect, items:[String], backgroundColor:UIColor, thumbColor:UIColor, textColor:UIColor, selectedTextColor:UIColor, orientation:ComponentOrientation) {
         super.init(frame: frame)
         self.items = items
         self.backgroundColor = backgroundColor
         self.thumbColor = thumbColor
         self.textColor = textColor
         self.selectedTextColor = selectedTextColor
-        self.componentOrientation = ComponentOrientation.TopDown
+        self.componentOrientation = orientation
         self.withIcon = false
         setupView()
     }
