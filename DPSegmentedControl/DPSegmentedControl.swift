@@ -202,7 +202,10 @@ class DPSegmentedControl:UIControl {
     }
     
     private func getTextX(itemWidth:CGFloat, textWidth:CGFloat) -> CGFloat {
-        let iconWidth:CGFloat = 16.0
+        var iconWidth:CGFloat = 0.0
+        if withIcon {
+            iconWidth = 16.0
+        }
         let avg = (iconWidth + textWidth)
         let space:CGFloat = (itemWidth - avg)/2
         
