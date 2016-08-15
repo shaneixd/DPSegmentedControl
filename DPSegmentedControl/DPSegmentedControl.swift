@@ -305,7 +305,7 @@ class DPSegmentedControl:UIControl {
         let labelWidth = self.bounds.width / CGFloat(items.count)
         let iconX = getTextX(labelWidth, textWidth: evaluateStringWidth(text))
         
-        UIView.animateWithDuration(0.5, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.8, options: [], animations: {
+        UIView.animateWithDuration(0.5, delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: [], animations: {
             
             var labelFrame = self.selectedLabel.bounds
             
