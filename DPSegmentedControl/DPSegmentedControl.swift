@@ -236,7 +236,7 @@ class DPSegmentedControl:UIControl {
         }
         
         thumbView.backgroundColor = thumbColor
-        thumbView.layer.cornerRadius = 5
+        thumbView.layer.cornerRadius = 4
         
         
         for index in 0...labels.count - 1 {
